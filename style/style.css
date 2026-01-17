@@ -13,7 +13,6 @@
 
  /* Navbar design */
  .navbar{
-    
     display: flex;
     padding: 5px;
     max-width: 1200px;
@@ -50,17 +49,127 @@
     display: none;
  }
 
+ /* banner design */
+ .banner-container{
+   padding: 10px;
+   display: flex;
+   max-width: 1200px;
+   margin: 0 auto;
+   
+ }
+ .banner-left{
+   
+   min-height: 200px;
+   width: 50%;
+ }
+ .banner-left>h1{
+   font-size: 78px;
+
+ }
+ .banner-left>p{
+   margin: 28px;
+
+ }
+ .banner-btn{
+   display: flex;
+   
+   
+ }
+   
+ .btn-1{
+   width: 200px;
+   height: 54px; 
+   background-color: #e6533c;
+   border-radius: 42px;
+   color: white;
+   
+ }
+
+.btn-2{
+   width: 200px;
+   height: 54px;
+   border-radius: 42px;
+   background-color: transparent;
+   color: aliceblue;
+   border: 1px solid gray;
+
+}
+
+ .banner-right{
+   
+   min-height: 200px;
+   width: 50%;
+   display: flex;
+   justify-content:right;
+   position: relative;
+
+ }
+ .banner-right img{
+   width: 55%;
+
+ }
+ .tooltip-1{
+   background-color: rgba(128, 128, 128, 0.356);
+   position: absolute;
+   right: 0;
+   padding: 15px 20px;
+   border-radius: 10px;
+   width: 190px;
+   height: 90px;
+   top: 25%;
+   right: -15%;
+
+ }
+ .tooltip-2{
+   display: flex;
+   gap:5%;
+   background-color: rgba(128, 128, 128, 0.192);
+   position: absolute;
+   padding: 5px 3px;
+   border-radius: 10px;
+   width: 190px;
+   height: 80px;
+   bottom: 10%;
+   left: 30%;
+   justify-content:center;  
+   align-items: center;  
+   
+ }
+ .circle{
+   color: #e6533c;
+   font-size: 30px; 
+ 
+ }
+
+   
+ 
 
 
- @media screen and (max-width:600px) {
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width:400px) {
     .menu-container{
         display: none;
     
     }
     .navbar i {
     display: inline;
- }
-
-
-    
- }
+   }
+    .banner-container{
+      flex-direction: column;
+   }
+    .banner-left,.banner-right{
+     width: 100%;
+    }
+    .banner-right img{
+     width: 100%;
+   }
+   
+}
