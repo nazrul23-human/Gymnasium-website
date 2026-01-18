@@ -140,6 +140,16 @@
    font-size: 30px; 
  
  }
+ /* training-section */
+ 
+.grid-container{
+  max-width: 1200px;
+  border: red;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+ 
 
    
  
